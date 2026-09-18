@@ -1,16 +1,4 @@
 
-## Introdução
-
-Os padrões de extensão permitem adicionar funcionalidades sem alterar o código existente, seguindo o princípio **Open/Closed** — aberto para extensão, fechado para modificação.
-
-| Padrão | Mini-projeto | Domínio |
-|--------|-------------|--------|
-| **Decorator** | Sistema de Notificações | Notificações multi-canal |
-| **Iterator** | Biblioteca Digital | Navegação em acervo |
-| **Visitor** | Nota Fiscal com Impostos | Cálculo de tributos |
-
----
-
 ## 1. Decorator
 
 ### Conceito
