@@ -212,48 +212,6 @@ public class ExemploDecorator {
 }
 ```
 
-### Saída esperada
-
-```
-=== Sistema de Notificações – Padrão Decorator ===
-
---- Notificação Simples (E-mail) ---
-📧 E-mail enviado para joao@email.com
-Custo: R$ 0,00
-
---- E-mail + SMS ---
-📧 E-mail enviado para maria@email.com
-📱 SMS enviado para maria@email.com
-Custo: R$ 0,05
-
---- E-mail + SMS + Push ---
-📧 E-mail enviado para carlos@email.com
-📱 SMS enviado para carlos@email.com
-🔔 Push enviado para carlos@email.com
-Custo: R$ 0,07
-
---- E-mail + SMS + Push + WhatsApp ---
-📧 E-mail enviado para ana@email.com
-📱 SMS enviado para ana@email.com
-🔔 Push enviado para ana@email.com
-💬 WhatsApp enviado para ana@email.com
-Custo: R$ 0,10
-
-[LOG] Notificação registrada para pedro@email.com às 2026-09-18T...
---- E-mail + Log ---
-📧 E-mail enviado para pedro@email.com
-📝 Log registrado
-Custo: R$ 0,00
-
-[LOG] Notificação registrada para lucas@email.com às 2026-09-18T...
---- Combo: E-mail + SMS + Push + WhatsApp + Log ---
-📧 E-mail enviado para lucas@email.com
-📱 SMS enviado para lucas@email.com
-🔔 Push enviado para lucas@email.com
-💬 WhatsApp enviado para lucas@email.com
-📝 Log registrado
-Custo: R$ 0,10
-```
 
 ### Explicação da aplicação do padrão
 
@@ -521,36 +479,6 @@ public class ExemploIterator {
 }
 ```
 
-### Saída esperada
-
-```
-=== Biblioteca Digital – Padrão Iterator ===
-Total de livros: 8
-
---- Livros ordenados por ano ---
-  "O Homem Duplo" – Fiódor Dostoiévski (1864) [Drama]
-  "Crime e Castigo" – Fiódor Dostoiévski (1866) [Drama]
-  "O Hobbit" – J.R.R. Tolkien (1937) [Fantasia]
-  "Fundação" – Isaac Asimov (1951) [Ficção Científica]
-  "O Senhor dos Anéis" – J.R.R. Tolkien (1954) [Fantasia]
-  "Duna" – Frank Herbert (1965) [Ficção Científica]
-  "O Silmarillion" – J.R.R. Tolkien (1977) [Fantasia]
-  "Neuromancer" – William Gibson (1984) [Ficção Científica]
-
---- Livros de Ficção Científica ---
-  "Duna" – Frank Herbert (1965) [Ficção Científica]
-  "Neuromancer" – William Gibson (1984) [Ficção Científica]
-  "Fundação" – Isaac Asimov (1951) [Ficção Científica]
-
---- Livros de J.R.R. Tolkien ---
-  "O Senhor dos Anéis" – J.R.R. Tolkien (1954) [Fantasia]
-  "O Hobbit" – J.R.R. Tolkien (1937) [Fantasia]
-  "O Silmarillion" – J.R.R. Tolkien (1977) [Fantasia]
-
---- Demo: reset do iterador ---
-  Primeiro: "O Senhor dos Anéis" – J.R.R. Tolkien (1954) [Fantasia]
-  Após reset: "O Senhor dos Anéis" – J.R.R. Tolkien (1954) [Fantasia]
-```
 
 ### Explicação da aplicação do padrão
 
@@ -899,45 +827,6 @@ public class ExemploVisitor {
 }
 ```
 
-### Saída esperada
-
-```
-=== Sistema de Impostos Fiscais – Padrão Visitor ===
-
-=======================================================
-           N O T A   F I S C A L
-=======================================================
-  Cesta de Frutas Orgânicas       R$    45.00
-  Pacote de Arroz                 R$    22.50
-  Smartphone Samsung              R$  1899.00
-  Notebook Lenovo                 R$  3499.00
-  Camiseta Básica                 R$    59.90
-  Jaqueta de Couro Importada      R$   450.00
-  Java – Guia do Programador      R$   120.00
-  Senhor dos Anéis – Edição Esp.  R$    85.00
-  Vinho Tinto Chileno             R$    65.00
-  Suco de Laranja Natural         R$     8.50
--------------------------------------------------------
-  Total dos produtos:            R$  6253.90
-  ICMS:                           R$  1111.24
-  IPI:                            R$   560.85
-  PIS/COFINS:                     R$   101.89
-=======================================================
-  TOTAL GERAL (produtos + impostos): R$  8027.88
-=======================================================
-
-=== Detalhamento por produto ===
-  Cesta de Frutas Orgânicas       → ICMS: R$  1.80 | IPI: R$ 0.00 | PIS: R$0.37
-  Pacote de Arroz                 → ICMS: R$  1.58 | IPI: R$ 0.00 | PIS: R$0.18
-  Smartphone Samsung              → ICMS: R$341.82 | IPI: R$189.90 | PIS: R$31.33
-  Notebook Lenovo                 → ICMS: R$629.82 | IPI: R$349.90 | PIS: R$57.73
-  Camiseta Básica                 → ICMS: R$  7.19 | IPI: R$ 3.00 | PIS: R$0.99
-  Jaqueta de Couro Importada      → ICMS: R$112.50 | IPI: R$22.50 | PIS: R$7.43
-  Java – Guia do Programador      → ICMS: R$  0.00 | IPI: R$ 0.00 | PIS: R$0.00
-  Senhor dos Anéis – Edição Esp.  → ICMS: R$  2.55 | IPI: R$ 0.00 | PIS: R$0.00
-  Vinho Tinto Chileno             → ICMS: R$ 13.00 | IPI: R$ 9.75 | PIS: R$1.07
-  Suco de Laranja Natural         → ICMS: R$  1.02 | IPI: R$ 0.43 | PIS: R$0.14
-```
 
 ### Explicação da aplicação do padrão
 
